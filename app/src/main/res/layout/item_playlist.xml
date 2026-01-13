@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <!-- Playlist Image -->
+    <ImageView
+        android:id="@+id/ivPlaylistImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Playlist Image"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Nama + deskripsi -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvPlaylistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist Name"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPlaylistDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist description"
+            android:textSize="14sp"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+    <!-- Tombol Hapus -->
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Hapus Playlist"/>
+</LinearLayout>
